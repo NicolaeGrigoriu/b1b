@@ -29,4 +29,4 @@ jobs:
       - deploy:
           name: Deploy Over SSH
           command: |
-            scp ~/work/. $SSH_USER@$SSH_HOST:/home/ng/web/.
+            scp -r ~/work/. $SSH_USER@$SSH_HOST:/home/ng/web/.
