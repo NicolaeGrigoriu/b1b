@@ -26,7 +26,10 @@ jobs:
           command: |
             set -x
             docker-compose up -d
-      - deploy:
+    deploy:
+      machine: true
+      steps:
+        -run:
           name: Deploy Over SSH
           command: |
             scp -r ~/tmp/. $SSH_USER@$SSH_HOST:/home/$SSH_USER/web/$PROJECT/
