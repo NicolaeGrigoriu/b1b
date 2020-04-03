@@ -4,7 +4,7 @@ version: 2
 jobs:
   build:
     machine: true
-    working_directory: ~/work
+    working_directory: ~/tmp
     steps:
       - checkout
       - run:
@@ -29,4 +29,4 @@ jobs:
       - deploy:
           name: Deploy Over SSH
           command: |
-            scp -r ~/work/. $SSH_USER@$SSH_HOST:/home/ng/web/.
+            scp -r ~/tmp/. $SSH_USER@$SSH_HOST:/home/$SSH_USER/web/$PROJECT/
