@@ -1,0 +1,19 @@
+uuid: 1f97ea85-e145-47f4-b07b-b86033451ef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_phone
+    - node.type.librarian
+id: node.librarian.field_librarian_phone
+field_name: field_librarian_phone
+entity_type: node
+bundle: librarian
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

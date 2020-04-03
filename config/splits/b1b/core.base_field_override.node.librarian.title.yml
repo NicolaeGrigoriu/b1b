@@ -1,0 +1,18 @@
+uuid: fe028ad7-433f-4056-afbb-bc59fd10af4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.librarian
+id: node.librarian.title
+field_name: title
+entity_type: node
+bundle: librarian
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

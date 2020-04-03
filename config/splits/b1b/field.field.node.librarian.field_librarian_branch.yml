@@ -1,0 +1,25 @@
+uuid: e7fec31f-8fe3-4269-aa8c-59a6dc283ab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_branch
+    - node.type.librarian
+id: node.librarian.field_librarian_branch
+field_name: field_librarian_branch
+entity_type: node
+bundle: librarian
+label: Branch
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: references
+      display_name: branches_references
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 1c84e39a-6902-45c6-b0a5-e19a4593fa77
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: taxonomy_term.field_branch_municipality
+field_name: field_branch_municipality
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

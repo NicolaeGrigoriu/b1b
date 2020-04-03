@@ -1,0 +1,23 @@
+uuid: 3678a026-1ec0-492f-950a-21ae8eee137d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - opening_hours
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  opening_hours:
+    oh_enabled: 1
+    oh_hide_on_empty: 0
+    oh_category_vocabulary: category
+name: Librarian
+type: librarian
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 945e7129-c946-47e6-95ef-37bb274d2a17
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Field of interest'
+weight: 0

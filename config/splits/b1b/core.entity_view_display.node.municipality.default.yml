@@ -1,0 +1,28 @@
+uuid: 6f886a22-88c7-42a7-9cfb-12156479762e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.municipality.body
+    - node.type.municipality
+  module:
+    - text
+    - user
+id: node.municipality.default
+targetEntityType: node
+bundle: municipality
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

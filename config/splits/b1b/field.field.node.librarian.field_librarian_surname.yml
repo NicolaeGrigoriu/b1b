@@ -1,0 +1,19 @@
+uuid: 65263913-61d7-4fbc-9974-d35b2c081f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_surname
+    - node.type.librarian
+id: node.librarian.field_librarian_surname
+field_name: field_librarian_surname
+entity_type: node
+bundle: librarian
+label: Surname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

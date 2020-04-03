@@ -1,0 +1,34 @@
+uuid: c644fa61-3b3e-4fee-8b66-20dcb0ce7480
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.librarian.field_librarian_branch
+    - field.field.node.librarian.field_librarian_category
+    - field.field.node.librarian.field_librarian_email
+    - field.field.node.librarian.field_librarian_image
+    - field.field.node.librarian.field_librarian_municipality
+    - field.field.node.librarian.field_librarian_phone
+    - field.field.node.librarian.field_librarian_surname
+    - node.type.librarian
+  module:
+    - user
+id: node.librarian.teaser
+targetEntityType: node
+bundle: librarian
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_librarian_branch: true
+  field_librarian_category: true
+  field_librarian_email: true
+  field_librarian_image: true
+  field_librarian_municipality: true
+  field_librarian_phone: true
+  field_librarian_surname: true

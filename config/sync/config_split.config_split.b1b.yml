@@ -1,0 +1,54 @@
+uuid: 49eb3e12-e12f-4578-8c3b-83d3612a2343
+langcode: en
+status: true
+dependencies: {  }
+id: b1b
+label: B1B
+description: ''
+folder: ../config/splits/b1b
+module: {  }
+theme: {  }
+blacklist:
+  - b1b_theme.settings
+  - block.block.b1b_theme_search
+  - block.block.b1b_theme_tools
+  - color.theme.b1b_theme
+  - core.entity_form_display.node.librarian.default
+  - core.entity_form_display.node.municipality.default
+  - core.entity_form_display.taxonomy_term.branch.default
+  - core.entity_form_display.taxonomy_term.category.default
+  - core.entity_view_display.taxonomy_term.branch.default
+  - core.entity_view_display.taxonomy_term.category.default
+  - field.field.node.librarian.field_librarian_branch
+  - field.field.node.librarian.field_librarian_category
+  - field.field.node.librarian.field_librarian_email
+  - field.field.node.librarian.field_librarian_image
+  - field.field.node.librarian.field_librarian_phone
+  - field.field.node.librarian.field_librarian_surname
+  - field.field.taxonomy_term.branch.field_branch_municipality
+  - field.field.taxonomy_term.category.field_category_municipality
+  - field.field.user.user.field_user_municipality
+  - field.storage.node.field_librarian_branch
+  - field.storage.node.field_librarian_category
+  - field.storage.node.field_librarian_email
+  - field.storage.node.field_librarian_image
+  - field.storage.node.field_librarian_municipality
+  - field.storage.node.field_librarian_phone
+  - field.storage.node.field_librarian_surname
+  - field.storage.taxonomy_term.field_branch_municipality
+  - field.storage.taxonomy_term.field_category_municipality
+  - field.storage.user.field_user_municipality
+  - node.type.librarian
+  - node.type.municipality
+  - shortcut.set.moderator
+  - shortcutperrole.settings
+  - system.theme
+  - taxonomy.vocabulary.branch
+  - taxonomy.vocabulary.category
+  - user.role.moderator
+  - views.view.branches
+  - views.view.categories
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

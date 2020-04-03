@@ -1,0 +1,22 @@
+uuid: 934dd53a-f2fa-4ef0-b854-e4897247430f
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer taxonomy'
+  - 'create librarian content'
+  - 'create terms in branch'
+  - 'create terms in category'
+  - 'delete own librarian content'
+  - 'delete terms in branch'
+  - 'delete terms in category'
+  - 'edit opening hours for content'
+  - 'edit own librarian content'
+  - 'edit terms in branch'
+  - 'edit terms in category'

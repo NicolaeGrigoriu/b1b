@@ -1,0 +1,30 @@
+uuid: c664cd63-70c0-40a3-a74f-89cd3aa97d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.branch.field_branch_municipality
+    - taxonomy.vocabulary.branch
+  module:
+    - text
+id: taxonomy_term.branch.default
+targetEntityType: taxonomy_term
+bundle: branch
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_branch_municipality:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

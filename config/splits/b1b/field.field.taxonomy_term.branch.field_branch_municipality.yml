@@ -1,0 +1,28 @@
+uuid: a1d4c9c5-4cee-453f-b99c-c0e7b2d1d79b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_branch_municipality
+    - node.type.municipality
+    - taxonomy.vocabulary.branch
+id: taxonomy_term.branch.field_branch_municipality
+field_name: field_branch_municipality
+entity_type: taxonomy_term
+bundle: branch
+label: Municipality
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      municipality: municipality
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

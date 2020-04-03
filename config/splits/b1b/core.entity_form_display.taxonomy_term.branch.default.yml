@@ -1,0 +1,51 @@
+uuid: e8b354c0-ee37-42b8-8854-3bf18d6d7e4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.branch.field_branch_municipality
+    - taxonomy.vocabulary.branch
+  module:
+    - path
+    - text
+id: taxonomy_term.branch.default
+targetEntityType: taxonomy_term
+bundle: branch
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_branch_municipality:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }

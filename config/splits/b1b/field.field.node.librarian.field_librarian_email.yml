@@ -1,0 +1,19 @@
+uuid: f1a83b1d-c95f-4ec1-8403-50e44f2844e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_email
+    - node.type.librarian
+id: node.librarian.field_librarian_email
+field_name: field_librarian_email
+entity_type: node
+bundle: librarian
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

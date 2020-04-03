@@ -1,0 +1,23 @@
+uuid: 550d2f5d-41fb-4044-858e-28c2c852957d
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - b1b_theme
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: b1b_theme_search
+theme: b1b_theme
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

@@ -1,0 +1,19 @@
+palette:
+  top: '#64b041'
+  bottom: '#cbc2b4'
+  bg: '#efefef'
+  sidebar: '#f6f6f2'
+  sidebarborders: '#f9f9f9'
+  footer: '#292929'
+  button: '#64b041'
+  buttonhover: '#64b041'
+  titleslogan: '#3b3b3b'
+  text: '#3b3b3b'
+  link: '#64b043'
+  linkontop: '#3b3b3b'
+logo: 'public://color/b1b_theme-98b1cb44/logo.svg'
+stylesheets:
+  - 'public://color/b1b_theme-98b1cb44/colors.css'
+files:
+  - 'public://color/b1b_theme-98b1cb44/logo.svg'
+  - 'public://color/b1b_theme-98b1cb44/colors.css'

@@ -1,0 +1,28 @@
+uuid: a798913e-d10c-46d9-b4e8-67e7cf5b2976
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_municipality
+    - node.type.librarian
+    - node.type.municipality
+id: node.librarian.field_librarian_municipality
+field_name: field_librarian_municipality
+entity_type: node
+bundle: librarian
+label: Municipality
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      municipality: municipality
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

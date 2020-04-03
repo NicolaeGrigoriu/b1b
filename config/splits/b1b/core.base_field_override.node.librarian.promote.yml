@@ -1,0 +1,22 @@
+uuid: ad6029ca-1269-4755-89b4-5bcd4ef06423
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.librarian
+id: node.librarian.promote
+field_name: promote
+entity_type: node
+bundle: librarian
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

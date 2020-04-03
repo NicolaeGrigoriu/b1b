@@ -1,0 +1,26 @@
+uuid: 8e4b8918-10be-43b7-8db6-b8f6625190f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_librarian_category
+    - node.type.librarian
+    - taxonomy.vocabulary.category
+id: node.librarian.field_librarian_category
+field_name: field_librarian_category
+entity_type: node
+bundle: librarian
+label: 'Field of interest'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: references
+      display_name: categories_references
+      arguments: {  }
+field_type: entity_reference
