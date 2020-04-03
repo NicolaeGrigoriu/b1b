@@ -30,3 +30,6 @@ jobs:
           command: |
             ssh $SSH_USER@$SSH_HOST
             cd /home/ng/web/
+            git clone git@github.com:NicolaeGrigoriu/b1b.git
+            cd b1b
+            composer install
