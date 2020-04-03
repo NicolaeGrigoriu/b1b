@@ -4,32 +4,15 @@ version: 2
 jobs:
   build:
     machine: true
-    working_directory: ~/tmp
+    working_directory: ~/work
     steps:
       - checkout
       - run:
-          name: Install Docker client
-          command: |
-            set -x
-            sudo apt install apt-transport-https ca-certificates curl software-properties-common
-            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-            sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-            apt-cache policy docker-ce
-      - run:
-          name: Install Docker Compose
-          command: |
-            set -x
-            sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-            sudo chmod +x /usr/local/bin/docker-compose
-      - run:
-          name: Start container and verify it's working
+          name: Start docker containers.
           command: |
             set -x
             docker-compose up -d
-    deploy:
-      machine: true
-      steps:
-        -run:
-          name: Deploy Over SSH
+      - deploy:
+          name: Deploy Over SSH.
           command: |
-            scp -r ~/tmp/. $SSH_USER@$SSH_HOST:/home/$SSH_USER/web/$PROJECT/
+            scp -r ~/work/. $SSH_USER@$SSH_HOST:/home/$/web/$PROJECT/.
