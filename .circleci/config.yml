@@ -26,6 +26,6 @@ jobs:
             docker-compose up -d
       - deploy:
           name: Deploy Over SSH
-            command: |
-              ssh $SSH_USER@$SSH_HOST
-              cd /home/ng/web/
+          command: |
+            ssh $SSH_USER@$SSH_HOST
+            cd /home/ng/web/
