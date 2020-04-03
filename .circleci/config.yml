@@ -63,23 +63,10 @@ jobs:
     steps:
       - run:
           name: Deploy Over SSH
-          command: |
+          command: |-
             ssh $SSH_USER@$SSH_HOST
             cd /home/ng/web
             git clone git@github.com:NicolaeGrigoriu/b1b.git
             cd b1b
             docker-compose up -d
             docker-compose exec php composer install
-
-  workflows:
-    version: 2
-    build-and-deploy:
-      jobs:
-        - build
-        - deploy:
-            requires:
-              - build # only deploy once build job has completed
-            filters:
-              branches:
-                only: master # only deploy on the master branch
-
