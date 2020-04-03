@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+#  build:
 #    docker:
 #      # Specify the version you desire here
 #      - image: circleci/php:7.1-node-browsers
@@ -64,9 +64,4 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |-
-            ssh $SSH_USER@$SSH_HOST
-            cd /home/ng/web
-            git clone git@github.com:NicolaeGrigoriu/b1b.git
-            cd b1b
-            docker-compose up -d
-            docker-compose exec php composer install
+            ssh $SSH_USER@$SSH_HOST "cd /home/ng/web/"
